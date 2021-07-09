@@ -27,7 +27,7 @@ const init = () => {
     // ColladaLoader
 
     const loader = new THREE.ColladaLoader();
-			loader.load( './mirahi-face8.dae', function ( collada ) {
+			loader.load( './terence-collada-max/source/2314159fe94440d5af1c1ff22107e06f.dae.dae', function ( collada ) {
 			let dae = collada.scene;
             scene.add(dae)
             dae.position.set(-2,-3,0)
