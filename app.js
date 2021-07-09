@@ -26,22 +26,22 @@ const init = () => {
 
     // ColladaLoader
 
-    // const loader = new THREE.ColladaLoader();
-	// 		loader.load( './terence-collada-max/source/2314159fe94440d5af1c1ff22107e06f.dae.dae', function ( collada ) {
-	// 		let dae = collada.scene;
-    //         scene.add(dae)
-    //         dae.position.set(0,0,0)
+    const loader = new THREE.ColladaLoader();
+			loader.load( './mirahi-face8.dae', function ( collada ) {
+			let dae = collada.scene;
+            scene.add(dae)
+            dae.position.set(0,0,0)
 
-    //         });
+            });
 
     // GLTF Loader
 
-    loader = new THREE.GLTFLoader();
-    loader.load("./chuck_collada_test2/scene.gltf", function(object) {
-        let model = object.scene;
-        model.position.set(0, 0, 0);
-        scene.add(model);
-    });
+    // loader = new THREE.GLTFLoader();
+    // loader.load("./chuck_collada_test2/scene.gltf", function(object) {
+    //     let model = object.scene;
+    //     model.position.set(0, 0, 0);
+    //     scene.add(model);
+    // });
 
     // Config light
    let light = new THREE.AmbientLight(0xffffff, 1);
