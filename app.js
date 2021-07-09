@@ -19,7 +19,7 @@ const init = () => {
     let far = 2000;
     camera = new THREE.PerspectiveCamera(fov,aspect, near, far);
     camera.position.set(0, 0, 30);  // (x, y, z)
-    camera.lookAt(0, 0, 0);
+    // camera.lookAt(0, 0, 0);
 
     // Configuration Scene
     scene = new THREE.Scene();
@@ -30,7 +30,8 @@ const init = () => {
 			loader.load( './mirahi-face8.dae', function ( collada ) {
 			let dae = collada.scene;
             scene.add(dae)
-            dae.position.set(0,0,0)
+            dae.position.set(-2,-3,0)
+            dae.rotation.x = 6;
 
             });
 
